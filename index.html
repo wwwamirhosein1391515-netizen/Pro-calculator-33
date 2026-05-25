@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pro Calculator</title>
-    <script>
-<link href="/fonts/Vazirmatn.css" rel="stylesheet" type="text/css" />
+    <!-- استفاده از CDN داخلی ایران به جای CDN اصلی -->
+    <link href="https://unpkg.ir/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.ir/@vazirmatn/vazirmatn@33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        /* استایل‌های کمکی برای جبران کمبودهای Tailwind 2.x */
+        .bg-glass {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        .shadow-glass {
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+    </style>
     <script>
         tailwind.config = {
             darkMode: 'class',
